@@ -1,6 +1,6 @@
 # Flight Booking API
 
-![CI](https://github.com/YOUR-USERNAME/flight-booking-api/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/mlondieteejay32/flight-booking-api/actions/workflows/ci.yml/badge.svg)
 
 A REST API for searching flights, viewing free seats, booking and cancelling. Built with Spring Boot and MySQL. The key rule: **a seat can never be booked twice**, even when many people book at the same moment.
 
