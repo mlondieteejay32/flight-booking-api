@@ -36,6 +36,8 @@ public class BookingService {
                 .orElseThrow(() -> new NotFoundException("Seat " + request.seatId() + " not found"));
         seat.reserve();
 
+        seatRepository.saveAndFlush(seat);
+
         String email = request.email().trim().toLowerCase();
         Passenger passenger = passengerRepository.findByEmail(email)
                 .orElseGet(() -> passengerRepository.save(
